@@ -512,11 +512,19 @@ void repackArchive(const char* importPath, const char* outpath)
 
 	freeMemory(fileenc);
 
+#if ANSI_ESCAPE_CODES
 #define C_GRN "\033[1;32m"
 #define C_BLU "\033[1,34m"
 #define C_YLW_BLD "\033[33m"
 #define C_RED_BLD "\033[1;31m"
 #define FMT_RST "\033[0m"
+#else
+#define C_GRN ""
+#define C_BLU ""
+#define C_YLW_BLD ""
+#define C_RED_BLD ""
+#define FMT_RST ""
+#endif
 
 	std::cout << C_GRN"Finished repacking in: " << FMT_RST C_YLW_BLD << (float)diff.count() / 1000.0f << "s" << std::endl;
 	size_t peak = memory_tracker::get_peak_heap_usage();
