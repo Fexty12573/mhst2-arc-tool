@@ -527,7 +527,7 @@ void initFileExts()
     fileExts[".mst"] = jamcrc(u8"rMetaSet");
     fileExts[".mst.xml"] = jamcrc(u8"rMetaSetXml");
     fileExts[".tik"] = jamcrc(u8"rCnsTinyIK");
-    fileExts[".scl"] = jamcrc(u8"rCnsScaleNormalize");
+    fileExts[".scnl"] = jamcrc(u8"rCnsScaleNormalize");
     fileExts[".lim"] = jamcrc(u8"rCnsRotateLimit");
     fileExts[".mtx"] = jamcrc(u8"rCnsMatrix");
     fileExts[".jof"] = jamcrc(u8"rCnsJointOffset");
@@ -1051,7 +1051,7 @@ void initFileExts()
     fileExtsReversed[jamcrc(u8"rMetaSet")] = ".mst";
     fileExtsReversed[jamcrc(u8"rMetaSetXml")] = ".mst.xml";
     fileExtsReversed[jamcrc(u8"rCnsTinyIK")] = ".tik";
-    fileExtsReversed[jamcrc(u8"rCnsScaleNormalize")] = ".scl";
+    fileExtsReversed[jamcrc(u8"rCnsScaleNormalize")] = ".scnl";
     fileExtsReversed[jamcrc(u8"rCnsRotateLimit")] = ".lim";
     fileExtsReversed[jamcrc(u8"rCnsMatrix")] = ".mtx";
     fileExtsReversed[jamcrc(u8"rCnsJointOffset")] = ".jof";

@@ -3,7 +3,6 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <chrono>
 
 #include <zlib.h>
